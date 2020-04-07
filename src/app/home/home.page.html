@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
+    <ion-title class="center">
+      <ion-icon name="skull-outline"></ion-icon>
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,22 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Action System</ion-title>
     </ion-toolbar>
   </ion-header>
-
+  
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <section>
+      <header>Acionar</header>
+      <ion-button expand="block" color="warning" (click)="getProfileOn()">
+        <ion-icon name="power-outline" ></ion-icon>
+      </ion-button>
+    </section>
+    <section>
+      <header>Desligar</header>
+      <ion-button expand="block" color="danger" (click)="getProfileOff()">
+        <ion-icon name="stop-circle-outline"></ion-icon>
+      </ion-button>
+    </section>
   </div>
 </ion-content>
